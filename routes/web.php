@@ -33,6 +33,11 @@ Route::get("/angkatan", function () {
     return "angkatan saya <b>tahun 2018</b>";
 });
 
+Route::get("/awp", function () {
+    return "<b>ADVANCED WEB PROGRAMMING</b>";
+});
+
+
 Use App\Http\Controllers\HomeController;
 
 Route::get('/test1/view1', [HomeController::class, "test1"]);
@@ -56,3 +61,5 @@ Route::get('/test8/view8', [AboutController::class, "test8"]);
 Route::get('/test9/view9', [AboutController::class, "test9"]);
 
 Route::get('/test10/view10', [AboutController::class, "test10"]);
+
+Route::get("/tema/bootstrap", [HomeController::class, "index"]);
